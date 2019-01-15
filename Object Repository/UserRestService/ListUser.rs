@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>UserList</name>
+   <name>ListUser</name>
    <tag></tag>
-   <elementGuidId>f2c6d407-5a4f-476e-8362-7c12fbe2ad51</elementGuidId>
+   <elementGuidId>9f35951b-36bc-4e3c-bd31-17de2aabdad4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <httpBody></httpBody>
@@ -30,10 +30,6 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-WS.verifyResponseStatusCode(response, 200)
-
-assertThat(response.getStatusCode()).isEqualTo(200)
 
 WS.verifyElementPropertyValue(response, 'data[1].first_name', &quot;Charles&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
